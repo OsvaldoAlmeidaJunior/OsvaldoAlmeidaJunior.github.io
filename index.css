@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #0f1111;
+  color: rgb(192, 14, 14);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  color: rgb(197, 7, 7);
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+.frase {
+  color: rgb(192, 14, 14);
+  background: #181b1b;
+  text-align: center;
+  padding: 2em;
+}
+
+.frase .btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  background: #000f0e;
+  color: rgb(231, 41, 41);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.flex-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  gap: 2em;
+}
+
+.flex-section img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.grid {
+  color: rgb(231, 41, 41);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+  list-style: none;
+  justify-content: center;
+}
+
+.grid li {
+  background: #000f0e;
+  padding: 1em;
+  border-radius: 4px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 2em;
+}
+
+form input, form textarea {
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.8em;
+  background: #000f0e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+footer {
+  background: #000f0e;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+  .flex-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
